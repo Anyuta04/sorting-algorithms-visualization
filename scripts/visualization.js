@@ -158,3 +158,26 @@ function sleep(ms){
 }
 
 generateArray();
+
+function toggleBlock(id){
+    const block = document.getElementById(id);
+
+    if(block.style.display === "none" || block.classList.contains("hidden")){
+        block.classList.remove("hidden");
+        block.style.display = "block";
+    } else {
+        block.style.display = "none";
+    }
+}
+
+function checkAnswer(isCorrect){
+    const result = document.getElementById("answerResult");
+
+    if(isCorrect){
+        result.textContent = "Правильно!";
+        result.style.color = "lightgreen";
+    } else {
+        result.textContent = "Неправильно. Спробуйте ще раз.";
+        result.style.color = "tomato";
+    }
+}
