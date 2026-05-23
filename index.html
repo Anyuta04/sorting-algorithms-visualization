@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алгоритми сортування</title>
+
+    <link rel="stylesheet" href="styles/custom.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Алгоритми сортування</h1>
+
+    <p>
+        Інтерактивна візуалізація алгоритмів для учнів 10–11 класів
+    </p>
+
+    <a href="#visualizer" class="button">
+        Розпочати навчання
+    </a>
+</header>
+
+<nav>
+    <a href="#">Головна</a>
+    <a href="#">Теорія</a>
+    <a href="#">Практика</a>
+    <a href="#">Тести</a>
+</nav>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Мета проєкту</h2>
+
+        <p>
+            Проєкт створений для вивчення алгоритмів сортування
+            через сучасні візуалізації, інтерактивні приклади
+            та практичні завдання.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Алгоритми, які вивчаються</h2>
+
+        <ul>
+            <li>Bubble Sort</li>
+            <li>Selection Sort</li>
+            <li>Insertion Sort</li>
+            <li>Merge Sort</li>
+        </ul>
+    </div>
+
+    <div class="card" id="visualizer">
+
+        <h2>Візуалізація Bubble Sort</h2>
+
+        <div class="buttons">
+
+    <select id="algorithm">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+    </select>
+
+    <button onclick="generateArray()">
+        Згенерувати масив
+    </button>
+
+    <button onclick="startSorting()">
+        Запустити сортування
+    </button>
+
+</div>
+
+        <div id="array-container"></div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>
+        Проєкт створено для лабораторної роботи з інформатики
+    </p>
+</footer>
+
+<script src="scripts/visualization.js"></script>
+
+</body>
+</html>
