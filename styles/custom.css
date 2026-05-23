@@ -136,3 +136,28 @@ footer{
     padding:20px;
     margin-top:40px;
 }
+
+.theory-links{
+    list-style:none;
+    padding:0;
+}
+
+.theory-links li{
+    margin-bottom:15px;
+}
+
+.theory-links a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:12px 20px;
+    border-radius:10px;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.theory-links a:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
