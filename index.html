@@ -82,32 +82,49 @@
 
 <section id="theory" class="card">
     <h2>Теоретичний матеріал</h2>
-    <p>
-        Алгоритми сортування використовуються для впорядкування даних.
-        Найпоширеніші методи: Bubble Sort, Selection Sort,
-        Insertion Sort та Merge Sort.
-    </p>
+    <button onclick="toggleBlock('theoryContent')">Розкрити / приховати теорію</button>
+
+    <div id="theoryContent" class="hidden">
+        <h3>Bubble Sort</h3>
+        <p>Bubble Sort порівнює сусідні елементи та міняє їх місцями, якщо вони розташовані неправильно.</p>
+
+        <h3>Selection Sort</h3>
+        <p>Selection Sort знаходить найменший елемент і переносить його на початок невідсортованої частини.</p>
+
+        <h3>Insertion Sort</h3>
+        <p>Insertion Sort поступово вставляє кожен елемент у правильну позицію.</p>
+
+        <h3>Merge Sort</h3>
+        <p>Merge Sort ділить масив на частини, а потім об’єднує їх у відсортованому порядку.</p>
+    </div>
 </section>
 
 <section id="practice" class="card">
     <h2>Практичні завдання</h2>
+    <button onclick="toggleBlock('practiceContent')">Розкрити / приховати практику</button>
 
-    <ul>
-        <li>Реалізуйте Bubble Sort мовою Python.</li>
-        <li>Порівняйте швидкість різних алгоритмів.</li>
-        <li>Створіть власний масив для сортування.</li>
-    </ul>
+    <div id="practiceContent" class="hidden">
+        <ul>
+            <li>Реалізуйте Bubble Sort мовою Python.</li>
+            <li>Порівняйте Bubble Sort і Selection Sort.</li>
+            <li>Додайте зміну швидкості анімації.</li>
+            <li>Створіть власну візуалізацію алгоритму.</li>
+        </ul>
+    </div>
 </section>
 
 <section id="tests" class="card">
     <h2>Тести</h2>
+    <button onclick="toggleBlock('testsContent')">Розкрити / приховати тести</button>
 
-    <p>1. Який алгоритм має складність O(n²)?</p>
+    <div id="testsContent" class="hidden">
+        <p>1. Який алгоритм працює шляхом обміну сусідніх елементів?</p>
+        <button onclick="checkAnswer(true)">Bubble Sort</button>
+        <button onclick="checkAnswer(false)">Merge Sort</button>
 
-    <button>Bubble Sort</button>
-    <button>Merge Sort</button>
+        <p id="answerResult"></p>
+    </div>
 </section>
-
 <footer>
     <p>
         Проєкт створено для лабораторної роботи з інформатики
